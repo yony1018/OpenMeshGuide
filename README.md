@@ -1,4 +1,2 @@
 # OpenMesh Tutorial
 
-a test
-
