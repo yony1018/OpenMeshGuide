@@ -18,17 +18,17 @@
 
 ## C++环境部署
 
-### 下载OpenMesh源码:
+### Cmake生成工程文件()
 
-### 部署Qt5
+#### 下载OpenMesh源码:
+
+#### 部署Qt5
 
 > 否则Cmake时出现 `QT5 not found! Skipping some apps.`
 >
 > > 安装Qt5也报错。。。
 
-### 使用CMake生成VS工程文件
-
-
+#### 使用CMake生成VS工程文件
 
 > 参考:
 >
@@ -57,12 +57,39 @@
 > [Visual Studio开源库集成器Vcpkg全教程--利用Vcpkg轻松集成开源第三方库_chenjm的专栏-CSDN博客_vcpkg](https://blog.csdn.net/cjmqas/article/details/79282847)
 >
 > [[工具\]包管理工具Vcpkg 的使用 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/153199835)
-
-
-
-### 直接下载OpenMesh，链接库到项目中
-
+>
+> > - SomeVcpkgTips
+> >
+> > ```
+> > ..\vcpkg search
+> > #查看所有支持的库
+> > 
+> > ..\vcpkg search [pkgname]
+> > #查找是否支持某一个库(这个搜索功能不是完全字匹配,甚至可以匹配到描述文字)
+> > 
+> > ..\vcpkg install [pkgname]	#安装一个库
+> > 
+> > #编译某一个架构的开源库:
+> > ..\vcpkg install [pkgname]:x86-windows	#安装32位(默认)
+> > ..\vcpkg install [pkgname]:x64-windows	#指定安装64位
+> > ..\vcpkg help triplet	#查看支持架构列表
+> > 
+> > 
+> > ..\vcpkg list	#查看已安装的库
+> > 
+> > ..\vcpkg remove [pkgname]	#移除某个库
+> > 
+> > ..\vcpkg integrate install	##集成库到全局##推荐##
+> > ..\vcpkg integrate remove	#移除集成
+> > 
+> > ```
+>
 > 
+
+
+### 直接下载安装OpenMesh库，链接库到项目中
+
+> [OpenMesh入门，安装，运行示例Hello World_偕臧-CSDN博客_openmesh](https://blog.csdn.net/qq_33154343/article/details/93206255)
 
 ## Python环境部署
 
@@ -80,7 +107,7 @@
 > >
 > >   > ~~出现pybind11相关问题~~
 > >   >
-> >   > 应该是没问题的，python动态语言的特性不允许我直接查看类与方法定义
+> >   > 应该是没问题的，python动态语言的特性**不允许直接查看类与方法定义**
 > >
 > > - 如果使用***VS***，读不到文件的话请调整项目输入输出参数
 
