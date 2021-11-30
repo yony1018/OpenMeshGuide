@@ -1,0 +1,139 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>189a1c1d-290d-484e-bfe2-38273ed153be</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>OfficialTestPrograms\FirstCube.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>C:\Users\16708\source\repos\yony1018\OpenMeshGuide\OpenMeshPython\OpenMeshPython\OfficialTestPrograms</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>OpenMeshPython</Name>
+    <RootNamespace>OpenMeshPython</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="OfficialTestPrograms\FirstCube.py" />
+    <Compile Include="OfficialTestPrograms\test_add_face.py" />
+    <Compile Include="OfficialTestPrograms\test_add_numpy.py" />
+    <Compile Include="OfficialTestPrograms\test_boundary.py" />
+    <Compile Include="OfficialTestPrograms\test_copy.py" />
+    <Compile Include="OfficialTestPrograms\test_delete.py" />
+    <Compile Include="OfficialTestPrograms\test_delete_face.py" />
+    <Compile Include="OfficialTestPrograms\test_indices.py" />
+    <Compile Include="OfficialTestPrograms\test_on_demand.py" />
+    <Compile Include="OfficialTestPrograms\test_property.py" />
+    <Compile Include="OfficialTestPrograms\test_property_array.py" />
+    <Compile Include="OfficialTestPrograms\test_property_list.py" />
+    <Compile Include="OfficialTestPrograms\test_python.py" />
+    <Compile Include="OfficialTestPrograms\test_read_write_obj.py" />
+    <Compile Include="OfficialTestPrograms\test_read_write_off.py" />
+    <Compile Include="OfficialTestPrograms\test_read_write_om.py" />
+    <Compile Include="OfficialTestPrograms\test_read_write_ply.py" />
+    <Compile Include="OfficialTestPrograms\test_read_write_stl.py" />
+    <Compile Include="OfficialTestPrograms\test_read_write_vtk.py" />
+    <Compile Include="OfficialTestPrograms\test_split_copy.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_current_halfedge_handle_replacement.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_face_edge.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_face_face.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_face_halfedge.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_face_vertex.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_halfedge_loop.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_vertex_edge.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_vertex_face.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_vertex_ihalfedge.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_vertex_ohalfedge.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_circulator_vertex_vertex.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_collapse.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_garbage_collection.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_iterators.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_normal_calculations.py" />
+    <Compile Include="OfficialTestPrograms\test_trimesh_others.py" />
+    <Compile Include="OpenMeshPython.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OfficialTestPrograms\" />
+    <Folder Include="OfficialTestPrograms\.idea\" />
+    <Folder Include="OfficialTestPrograms\.idea\inspectionProfiles\" />
+    <Folder Include="OfficialTestPrograms\.pytest_cache\" />
+    <Folder Include="OfficialTestPrograms\.pytest_cache\v\" />
+    <Folder Include="OfficialTestPrograms\.pytest_cache\v\cache\" />
+    <Folder Include="OfficialTestPrograms\OutFiles\" />
+    <Folder Include="OfficialTestPrograms\TestFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OfficialTestPrograms\.idea\.gitignore" />
+    <Content Include="OfficialTestPrograms\.idea\inspectionProfiles\profiles_settings.xml" />
+    <Content Include="OfficialTestPrograms\.idea\misc.xml" />
+    <Content Include="OfficialTestPrograms\.idea\modules.xml" />
+    <Content Include="OfficialTestPrograms\.idea\OfficialTestPrograms.iml" />
+    <Content Include="OfficialTestPrograms\.idea\vcs.xml" />
+    <Content Include="OfficialTestPrograms\.idea\workspace.xml" />
+    <Content Include="OfficialTestPrograms\.pytest_cache\.gitignore" />
+    <Content Include="OfficialTestPrograms\.pytest_cache\CACHEDIR.TAG" />
+    <Content Include="OfficialTestPrograms\.pytest_cache\README.md" />
+    <Content Include="OfficialTestPrograms\.pytest_cache\v\cache\nodeids" />
+    <Content Include="OfficialTestPrograms\.pytest_cache\v\cache\stepwise" />
+    <Content Include="OfficialTestPrograms\OutFiles\cube_floating.off" />
+    <Content Include="OfficialTestPrograms\OutFiles\cube_floating_binary.off" />
+    <Content Include="OfficialTestPrograms\OutFiles\EightWithHoleOut.off" />
+    <Content Include="OfficialTestPrograms\OutFiles\mymesh.obj" />
+    <Content Include="OfficialTestPrograms\OutFiles\temp.off" />
+    <Content Include="OfficialTestPrograms\OutFiles\test.obj" />
+    <Content Include="OfficialTestPrograms\OutFiles\test_read_write_read.obj" />
+    <Content Include="OfficialTestPrograms\OutFiles\test_read_write_read.off" />
+    <Content Include="OfficialTestPrograms\OutFiles\test_read_write_read.stl" />
+    <Content Include="OfficialTestPrograms\TestFiles\.gitignore" />
+    <Content Include="OfficialTestPrograms\TestFiles\BigHand.off" />
+    <Content Include="OfficialTestPrograms\TestFiles\bunnyhole.off" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-custom_props.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-degenerated.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-extra-elements-binary.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-extra-elements.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-normals.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-texCoords.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-texCoords.om" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-texCoords.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-texCoords3d.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-vertex-colors-after-vertex-definition.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-vertex-colors-as-vc-lines.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-vertexColors.om" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal-vertexColors.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal.om" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube-minimal.stl" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube1.off" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube1.pm" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube1.stl" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube1Binary.stl" />
+    <Content Include="OfficialTestPrograms\TestFiles\cube1_customProps.om" />
+    <Content Include="OfficialTestPrograms\TestFiles\EightWithHole.off" />
+    <Content Include="OfficialTestPrograms\TestFiles\meshlab.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\pointCloudBadEncoding.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\pointCloudGoodEncoding.ply" />
+    <Content Include="OfficialTestPrograms\TestFiles\SphereWithHole.off" />
+    <Content Include="OfficialTestPrograms\TestFiles\square_material.mtl" />
+    <Content Include="OfficialTestPrograms\TestFiles\square_material.obj" />
+    <Content Include="OfficialTestPrograms\TestFiles\square_material_texture.mtl" />
+    <Content Include="OfficialTestPrograms\TestFiles\square_material_texture.obj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
